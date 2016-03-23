@@ -3,6 +3,7 @@
 
 
 异常类型1：
+<pre>
 发生了 System.Windows.Markup.XamlParseException
   _HResult=-2146233087
   _message=初始化“System.Windows.Controls.Primitives.ScrollBar”时引发了异常。
@@ -37,3 +38,4 @@
             在 System.Windows.FrameworkElement.EndInit()
             在 MS.Internal.Xaml.Runtime.ClrObjectRuntime.InitializationGuard(XamlType xamlType, Object obj, Boolean begin)
        InnerException: 
+<pre/>
