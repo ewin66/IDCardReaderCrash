@@ -1,0 +1,2 @@
+# IDCardReaderCrash
+此项目重现了一个WPF的bug：当成功读取身份证后，点击含有DataGrid的TabItem时，会引发DivideByZeroException异常（或者其他异常）
