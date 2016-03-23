@@ -2,7 +2,7 @@
 此项目重现了一个WPF的bug：当成功读取身份证后，点击含有DataGrid的TabItem时，会引发DivideByZeroException异常（或者其他异常）
 
 ####异常类型1：
-<pre>
+<pre><code>
 未处理System.DivideByZeroException
   _HResult=-2147352558
   _message=尝试除以零。
@@ -109,10 +109,10 @@
        在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
        在 System.Threading.ThreadHelper.ThreadStart()
   InnerException: 
-<pre/>
+</code></pre>
 <br />
 ###异常类型2：
-<pre>
+<pre><code>
 发生了 System.Windows.Markup.XamlParseException
   _HResult=-2146233087
   _message=初始化“System.Windows.Controls.Primitives.ScrollBar”时引发了异常。
@@ -147,4 +147,4 @@
             在 System.Windows.FrameworkElement.EndInit()
             在 MS.Internal.Xaml.Runtime.ClrObjectRuntime.InitializationGuard(XamlType xamlType, Object obj, Boolean begin)
        InnerException: 
-<pre/>
+</code></pre>
