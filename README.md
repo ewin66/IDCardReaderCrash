@@ -1,8 +1,8 @@
 # IDCardReaderCrash
 此项目重现了WPF桌面应用的一个Bug：当通过动态库成功读取身份证后，点击窗口上的任意控件都可能引起应用崩溃。如：
-+点击含有DataGrid的TabItem时
-+点击按钮打开新窗口时
-+点击编辑TextBox的内容时
+* 点击含有DataGrid的TabItem时
+* 点击按钮打开新窗口时
+* 点击编辑TextBox的内容时
 
 ## 环境为 Visual Studio 2013，已验证在windows 10 和windows 7可复现。
 
