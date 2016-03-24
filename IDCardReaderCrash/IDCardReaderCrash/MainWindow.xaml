@@ -24,6 +24,8 @@
         <TextBox x:Name="tbAddressDire" HorizontalAlignment="Left" Height="23" Margin="200,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308"/>
         <Label Content="地址(通过事件)" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top"/>
         <Label Content="地址(直接加载)" HorizontalAlignment="Left" Margin="110,50,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btOpenNewWindow" Content="点此引发异常(模态)" HorizontalAlignment="Left" Margin="243,87,0,0" VerticalAlignment="Top" Width="130" Height="23" Click="btOpenNewWindow_Click"/>
+        <Button x:Name="btOpenNewWindow2" Content="点此引发异常(非模态)" HorizontalAlignment="Left" Margin="378,87,0,0" VerticalAlignment="Top" Width="130" Height="23" Click="btOpenNewWindow_Click2"/>
 
     </Grid>
 </Window>

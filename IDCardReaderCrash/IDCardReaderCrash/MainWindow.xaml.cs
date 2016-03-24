@@ -61,5 +61,19 @@ namespace IDCardReaderCrash
             }
             this.iDCReader.close();
         }
+
+        private void btOpenNewWindow_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 wWindow1 = new Window1();
+            wWindow1.Address = this.tbAddress.Text;
+            wWindow1.ShowDialog();
+        }
+
+        private void btOpenNewWindow_Click2(object sender, RoutedEventArgs e)
+        {
+            Window1 wWindow1 = new Window1();
+            wWindow1.Address = this.tbAddress.Text;
+            wWindow1.Show();
+        }
     }
 }
