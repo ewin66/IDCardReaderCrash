@@ -3,15 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <Button x:Name="btReadCard" Content="读卡" HorizontalAlignment="Left" Margin="55,40,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btReadCard_Click"/>
-        <TextBox x:Name="tbAddress" HorizontalAlignment="Left" Height="23" Margin="185,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
-        <TabControl HorizontalAlignment="Left" Height="165" Margin="55,115,0,0" VerticalAlignment="Top" Width="415">
-            <TabItem Header="TabItem">
+        <Button x:Name="btReadCard" Content="先读卡" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btReadCard_Click"/>
+        <TextBox x:Name="tbAddress" HorizontalAlignment="Left" Height="23" Margin="200,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308"/>
+        <TabControl Margin="10,0,10,10" Height="196" VerticalAlignment="Bottom">
+            <TabItem Header="打酱油">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="TabItem">
+            <TabItem Header="点此引发异常">
                 <Grid Background="#FFE5E5E5">
-                    <DataGrid HorizontalAlignment="Left" Margin="32,40,0,0" VerticalAlignment="Top" Height="70" Width="335">
+                    <DataGrid Margin="0,0,0,0">
                         <DataGrid.Columns>
                             <DataGridTextColumn/>
                             <DataGridCheckBoxColumn/>
@@ -21,7 +21,9 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <TextBox x:Name="tbAddressDire" HorizontalAlignment="Left" Height="23" Margin="185,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="tbAddressDire" HorizontalAlignment="Left" Height="23" Margin="200,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308"/>
+        <Label Content="地址(通过事件)" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="地址(直接加载)" HorizontalAlignment="Left" Margin="110,50,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
